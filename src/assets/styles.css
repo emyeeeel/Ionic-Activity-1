@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+#title{
+    color: black;
+    font-weight: bold;
+}
+
+#MainContainer {
+    width: 100%;
+    height: 100%;
+}
+
+#SilverCardContainer,
+#GoldCardContainer,
+#PlatinumCardContainer {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0; 
+    margin: 10px;
+}
+
+#SilverCardContainer {
+    position: absolute;
+    top: 100px;
+    left: 20.5%;
+    width: 260px;
+    height: 435px;
+}
+
+#GoldCardContainer {
+    position: absolute;
+    top: 75px;
+    left: 60%;
+    width: 290px;
+    height: 495px;
+}
+
+#PlatinumCardContainer {
+    position: absolute;
+    left: 39%;
+    width: 300px;
+    height: 515px;
+}
+
+#CardHeader{
+    height: 15%;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    flex: 0 0 auto;
+}
+
+#CardHeader > p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#NumOfBottles{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 22px;
+}
+
+#CardHeader p {
+    color: white;
+}
+
+#SilverCardContainer > #CardFooter{
+    flex: 0 0 auto;
+    width: 100%;
+    height: 7.5%;
+    background-color: #499A95;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+#GoldCardContainer > #CardFooter{
+    flex: 0 0 auto;
+    width: 100%;
+    height: 7.5%;
+    background-color: #499A95;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+#PlatinumCardContainer > #CardFooter {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 8%;
+    background-color: #499A95;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+
+#PlatinumCardContainer > #CardFooter > #FooterText{
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#CardContent{
+    flex: 1 1 auto;
+}
+
+#SilverCardContainer > #CardFooter > #FooterText{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#GoldCardContainer > #CardFooter > #FooterText{
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#regPrice{
+    color: red;
+    text-decoration: line-through;
+}
+
+
+.cartButtonContent {
+    display: flex;
+    align-items: center; 
+}
+  
+.cartButtonContent p {
+    font-size: 12px;
+}
+
+.cartButtonContent img {
+    margin-right: 8px; 
+    width: 20px;
+    height: 20px;
+}
+  
+#componentText {
+    margin: 0; 
+}
+
+ion-button{
+    --background: #E9AC23;
+    --border-radius: 25px;
+    height: 12.5%;
+}
+
+#Cards {
+    width: 50%;
+    display: block;
+    margin: 5px auto;
+}
+
+
+#shipping {
+    margin: 0;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 10px;
+}
+
+#CardHeader > #Silver {
+    color: white;
+}
+
+#CardHeader > #Gold {
+    color: #E9AC23;
+    font-size: 15px;
+}
+
+
+
+/*Silver Card Container CSS Designs*/
+
+#SilverCardContainer > #CardContent > #discountedPrice > #discountedAmount{
+    font-size: 50px;
+}
+
+#SilverCardContainer > #CardContent > #NumOfMonths{
+    margin: 2.5px;
+    font-size: 12px;
+}
+
+#oneBottle{
+    width: 79.5px;
+    height: 136.5px;
+    margin: 3px;
+}
+
+#SilverCardContainer > #CardContent > #regularPrice{
+    margin: 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#SilverCardContainer > #CardContent > #discountedPrice{
+    margin: 0;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#SilverCardContainer > #CardContent > #circle {
+    position: absolute;
+    right: 4%;
+    width: 70px;
+    height: 70px;
+    background-color: #499A95;
+    border-radius: 50%;
+    border: #F9EA96 3px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#SilverCardContainer > #CardContent > #circle > .text-container {
+    transform: rotate(25deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+#SilverCardContainer > #CardContent > #circle > .text-container > p {
+    margin: 0;
+    font-weight: 500;
+    color: white;
+    font-size: 13.5px;
+}
+
+
+/*Gold Card Container CSS Designs*/
+
+#GoldCardContainer > #CardContent > #NumOfMonths{
+    margin: 5px;
+    font-size: 15px;
+}
+
+#threeBottles{
+    width: 147.6px;
+    height: 137.52px;
+    margin: 3px;
+}
+
+#GoldCardContainer > #CardContent > #regularPrice{
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#GoldCardContainer > #CardContent > #discountedPrice{
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#GoldCardContainer > #CardContent > #only{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#GoldCardContainer > #CardContent > #perBottle{
+    margin: 0;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+#GoldCardContainer > #CardContent > #discountedPrice > #discountedAmount{
+    font-size: 50px;
+}
+
+#GoldCardContainer > #CardContent > #circle {
+    position: absolute;
+    right: 4%;
+    width: 70px;
+    height: 70px;
+    background-color: #499A95;
+    border-radius: 50%;
+    border: #F9EA96 3px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#GoldCardContainer > #CardContent > #circle > .text-container {
+    transform: rotate(25deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+#GoldCardContainer > #CardContent > #circle > .text-container > p {
+    margin: 0;
+    font-weight: 500;
+    color: white;
+    font-size: 13.5px;
+}
+
+
+/*Platinum Card Container CSS Designs*/
+
+#PlatinumCardContainer > #CardContent > #circle {
+    position: absolute;
+    top: 17%;
+    right: -2%;
+    width: 70px;
+    height: 70px;
+    background-color: #499A95;
+    border-radius: 50%;
+    border: #F9EA96 3px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#PlatinumCardContainer > #CardContent > #circle > .text-container {
+    transform: rotate(25deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+#PlatinumCardContainer > #CardContent > #circle > .text-container > p {
+    margin: 0;
+    font-weight: 500;
+    color: white;
+    font-size: 13.5px;
+}
+
+#PlatinumCardContainer {
+    background-color: #E3FFFC;
+}
+
+#PlatinumCardContainer > #CardHeader {
+    background: linear-gradient(90deg, #5DABE3 0%, #499A95 100%);
+}
+
+#PlatinumCardContainer > #CardHeader > #bestValue {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#PlatinumCardContainer > #CardHeader > #Platinum {
+    margin: 0;
+    font-size: 25px;
+}
+
+#PlatinumCardContainer > #CardContent > #BuyBottles {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#PlatinumCardContainer > #CardContent > #NumOfMonths {
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#PlatinumCardContainer > #CardContent > #FreeShipping {
+    margin: 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+#imageContainer {
+    width: 100%; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    position: relative; 
+}
+
+#sixBottles{
+    width: 247.5px;
+    height: 132px;
+    max-width: 100%;
+}
+
+#PlatinumCardContainer > #CardContent > #regularPrice {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#PlatinumCardContainer > #CardContent > #only {
+    margin: 2px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#PlatinumCardContainer > #CardContent > #discountedPrice > #discountedAmount{
+    font-size: 45px;
+}
+
+
+#PlatinumCardContainer > #CardContent > #discountedPrice{
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#PlatinumCardContainer > #CardContent > #perBottle{
+    margin: 0;
+    font-size: 10px;
+    font-weight: 700;
+}
